@@ -16,8 +16,6 @@ def get_top_most_calories(calories_list: list[str], number_to_sort: int = 3) -> 
         if food_calories == '\n':
             if (sum > top_numbers[0]):
                 top_numbers = add_and_sort_top_numbers(top_numbers, sum)
-                print(top_numbers)
-            print(sum)
             sum = 0
             continue
         sum += int(food_calories)
